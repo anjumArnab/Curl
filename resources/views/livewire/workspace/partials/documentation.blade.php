@@ -53,7 +53,7 @@
             <h3 class="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-2">
                 Request Body <span class="text-gray-400 normal-case font-normal">({{ $body['type'] ?? 'raw' }})</span>
             </h3>
-            <pre class="text-xs rounded-md bg-gray-900 text-gray-100 p-3 overflow-x-auto">{{ $body['content'] }}</pre>
+            <pre class="text-xs rounded-md border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50 text-gray-800 dark:text-gray-100 p-3 overflow-x-auto">{{ $body['content'] }}</pre>
         </section>
     @endif
 
@@ -72,7 +72,7 @@
                             <span class="text-sm text-gray-600 dark:text-gray-400">{{ $response['description'] ?? '' }}</span>
                         </div>
                         @if (!empty($response['example']))
-                            <pre class="text-xs rounded-b-md bg-gray-900 text-gray-100 p-3 overflow-x-auto">{{ $response['example'] }}</pre>
+                            <pre class="text-xs rounded-b-md bg-gray-50 dark:bg-gray-800/50 text-gray-800 dark:text-gray-100 p-3 overflow-x-auto">{{ $response['example'] }}</pre>
                         @endif
                     </div>
                 @endforeach
